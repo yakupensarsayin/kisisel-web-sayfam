@@ -1,0 +1,54 @@
+/* değişkenler */
+:root{
+    --nav-background-color: #313338;
+    --primary: #4A6572;
+}
+
+/* sıfırlama */
+body, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/* temel stiller */
+body{
+    background-color: var(--primary);
+    overflow-x: hidden;
+}
+
+/* mobil ekranları */
+.site-nav{
+    background-color: var(--nav-background-color);
+    text-align: center;
+}   
+.company-name{
+    padding-top: 0.625rem;
+    color: azure;
+}
+.other-pages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.other-pages > li{
+    margin-bottom: 0.625rem;
+    font-size: 1.12rem;
+}
+
+/* küçük tablet ekranları */
+@media screen and (min-width: 620px) {
+    
+}
+
+/* büyük tablet ve laptop ekranları */
+@media screen and (min-width: 960px) {
+    
+}
+
+/* büyük monitör ekranları */
+@media screen and (min-width: 1200px) {
+    
+}
