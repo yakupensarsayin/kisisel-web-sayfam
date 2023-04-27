@@ -4,7 +4,7 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 
 ## İçerdiği Sayfalar
 
-* Şu anlık namevcut
+* Hakkımda (tamamlanmış hâlde değil)
 
 ## Hedefler
 

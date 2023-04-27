@@ -1,0 +1,16 @@
+.page-info-title{
+    color: #339BFF;
+    margin-top: 75px;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 768px){
+    .page-info-title{
+        margin-top: 0;
+    }
+    .card-container{
+        margin-top: 75px;
+    }    
+}
+
