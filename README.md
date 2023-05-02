@@ -4,11 +4,11 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 
 ## İçerdiği Sayfalar
 
-* Hakkımda (tamamlanmış hâlde değil)
+* Hakkımda
 
 ## Hedefler
 
-* [ ]  Hakkında
+* [x]  Hakkımda
 * [ ]  Özgeçmiş
 * [ ]  Şehrim
 * [ ]  Mirasımız
