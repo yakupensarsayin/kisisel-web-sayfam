@@ -5,11 +5,12 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 ## İçerdiği Sayfalar
 
 * Hakkımda
+* Öz geçmiş
 
 ## Hedefler
 
 * [x]  Hakkımda
-* [ ]  Özgeçmiş
+* [X]  Öz Geçmiş
 * [ ]  Şehrim
 * [ ]  Mirasımız
 * [ ]  Takımımız

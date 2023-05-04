@@ -5,9 +5,27 @@
     font-size: 1.25rem;
 }
 
+.blue{
+    color: #339BFF;
+}
+
 .card-icon{
     width: 50px;
     height: 50px;
+}
+
+.portrait{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+#first-item{
+    margin-top: 75px;
+}
+
+article{
+    margin: 0;
 }
 
 @media (min-width: 768px){
