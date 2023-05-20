@@ -59,11 +59,18 @@
       <form class="login-form col-md-8 mx-auto" action="assets/php/loginController.php" method="post">
         <div class="mb-3">
           <label for="inputMail" class="form-label">E-posta adresiniz:</label>
-          <input type="email" class="form-control" name="inputEmail" id="inputEmail" aria-describedby="emailHelp">
+          <input 
+            type="email" 
+            pattern=".+@sakarya.edu.tr\.com"
+            title="Lütfen yalnızca Sakarya Üniversitesine ait e-postasınızı giriniz"
+            placeholder="öğrenci-no@sakarya.edu.tr"
+            class="form-control"
+            name="inputEmail" id="inputEmail" 
+            required>
         </div>
         <div class="mb-3">
           <label for="inputPassword" class="form-label">Şifreniz:</label>
-          <input type="password" class="form-control" name="inputPassword" id="inputPassword">
+          <input type="password" class="form-control" name="inputPassword" id="inputPassword" required>
         </div>
         <button type="submit" class="btn btn-primary">Gönder</button>
       </form>
