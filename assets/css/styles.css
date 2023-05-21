@@ -28,6 +28,17 @@ article{
     margin: 0;
 }
 
+html{
+    scroll-padding-top: 95px;
+ }
+
+#carouselHero .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
 @media (min-width: 768px){
     .page-info-title{
         margin-top: 0;

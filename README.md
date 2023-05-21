@@ -6,13 +6,17 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 
 * Hakkımda
 * Öz geçmiş
+* Şehrim
+* İletişim
+* İlgi Alanım
+* Giriş Formu
 
 ## Hedefler
 
 * [x]  Hakkımda
 * [X]  Öz Geçmiş
-* [ ]  Şehrim
+* [X]  Şehrim
 * [ ]  Mirasımız
-* [ ]  İletişim
-* [X]  Giriş Formu
+* [X]  İletişim
 * [X]  İlgi Alanım
+* [X]  Giriş Formu
