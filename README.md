@@ -13,6 +13,6 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 * [X]  Öz Geçmiş
 * [ ]  Şehrim
 * [ ]  Mirasımız
-* [ ]  Takımımız
 * [ ]  İletişim
-* [ ]  Giriş Formu
+* [X]  Giriş Formu
+* [X]  İlgi Alanım
