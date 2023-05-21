@@ -27,7 +27,7 @@
 
     <div class="container" id="first-item">
 
-        <form id="contact-form">
+        <form id="contact-form" action="assets/php/contactController.php" method="post">
             <fieldset>
                 <legend class="blue h5">İletişim :</legend>
                 
@@ -55,8 +55,8 @@
                     <div class="mb-3 col-4">
                         <label for="genders">Cinsiyet</label>
                         <select class="mt-3" id="genders" name="genders">
-                            <option value="male">Erkek</option>
-                            <option value="female">Kadın</option>
+                            <option value="Erkek">Erkek</option>
+                            <option value="Kadın">Kadın</option>
                         </select>
                     </div>
 
@@ -72,7 +72,7 @@
             </fieldset>
 
             <div class="d-flex">
-              <button type="button" class="btn btn-primary me-2" onclick="checkAllJavascript()">Gönder - I</button>
+              <button type="button" class="btn btn-primary me-2" onclick="makeChecksJavascript()">Gönder - I</button>
               <button type="button" class="btn btn-info me-2">Gönder - II</button>
               <input type="reset" class="btn btn-danger" value="Temizle">
             </div>
@@ -84,22 +84,56 @@
     <script>
 
       // Javascript ile form elemanlarının kontrolü
-      const name = document.getElementById("name")
-      const surname = document.getElementById("surname")
-      const email = document.getElementById("email")
-      const message = document.getElementById("message")
 
-      function checkNotEmpty(){
-        return name.value.length > 0 && surname.value.length > 0 
-          && email.value.length > 0 && message.value.length > 0
+      function checkEmpty(name, surname, email, message){
+        console.log(name.length);
+        console.log(surname.length);
+        console.log(email.length);
+        console.log(message.length);
+
+        return name.length == 0 || surname.length == 0 
+          || email.length == 0 || message.length == 0
       }
 
-      function checkAllJavascript(){
-        if (!checkNotEmpty()) {
+      function checkStartDot(email){
+        return email.charAt(0) == '.'
+      }
+
+      function checkEndDot(email){
+        return email.charAt(-1) == '.'
+      }
+
+      function checkEmailSign(email){
+        return email.includes("@")
+      }
+
+      function makeChecksJavascript(){
+
+        const form = document.getElementById("contact-form")
+        const name = document.getElementById("name").value
+        const surname = document.getElementById("surname").value
+        const email = document.getElementById("email").value
+        const message = document.getElementById("message").value
+
+        if (checkEmpty(name, surname, email, message)) {
           alert("Lütfen tüm form alanlarını doldurunuz.")
           return
         }
-        
+        if (checkStartDot(email)) {
+          alert("E-posta nokta (.) ile başlayamaz.")
+          return
+        }
+        if (checkEndDot(email)) {
+          alert("E-posta nokta (.) ile bitemez.")
+          return
+        }
+        if (checkEmailSign(email) == false) {
+          alert("E-postanızın içerisinde @ işareti bulunmamaktadır.")
+          return
+        }
+
+        // Yöntem 1
+        form.submit()
       }
 
     </script>
