@@ -74,7 +74,7 @@
             <div class="d-flex">
               <button type="button" class="btn btn-primary me-2" onclick="makeChecksJavascript()">Gönder - I</button>
               <button type="button" class="btn btn-info me-2">Gönder - II</button>
-              <input type="reset" class="btn btn-danger" value="Temizle">
+              <input type="reset" class="btn btn-danger" onclick="clear()" value="Temizle">
             </div>
 
         </form>
@@ -108,7 +108,6 @@
       }
 
       function makeChecksJavascript(){
-
         const form = document.getElementById("contact-form")
         const name = document.getElementById("name").value
         const surname = document.getElementById("surname").value
@@ -134,6 +133,11 @@
 
         // Yöntem 1
         form.submit()
+      }
+
+      function clear(){
+        const form = document.getElementById("contact-form")
+        form.reset()
       }
 
     </script>
