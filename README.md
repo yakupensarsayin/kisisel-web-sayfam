@@ -7,6 +7,7 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 * Hakkımda
 * Öz geçmiş
 * Şehrim
+* Takımımız
 * İletişim
 * İlgi Alanım
 * Giriş Formu
@@ -16,7 +17,7 @@ Kendim, memleketim ve daha bir çok şey üzerine bilgi veren _responsive_ kişi
 * [x]  Hakkımda
 * [X]  Öz Geçmiş
 * [X]  Şehrim
-* [ ]  Mirasımız
+* [x]  Takımımız
 * [X]  İletişim
 * [X]  İlgi Alanım
 * [X]  Giriş Formu
